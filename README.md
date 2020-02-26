@@ -15,7 +15,7 @@ $ docker volume create --name maven-repo
 Run tests:
 
 ```bash
-docker run -it --rm -v maven-repo:/root/.m2 -v $PWD:/app maven:3.6-jdk-11 mvn -f /app/pom.xml clean test
+$ docker run -it --rm -v maven-repo:/root/.m2 -v $PWD:/app maven:3.6-jdk-11 mvn -f /app/pom.xml clean test
 ```
 
 # Running tests without Docker
